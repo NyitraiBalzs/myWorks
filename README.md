@@ -1,2 +1,2 @@
-# Munk-im
+# Munkáim
 saját webes gyakorlásaim/munkáim
