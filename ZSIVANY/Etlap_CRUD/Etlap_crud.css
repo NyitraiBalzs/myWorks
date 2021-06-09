@@ -1,0 +1,56 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  
+}
+
+.container{
+  max-width: 1390px;
+  margin-left: auto;
+  z-index: -5;
+  
+}
+
+
+
+#showBtn{
+  cursor: pointer;
+  width: 7em;
+  height: 7em;
+  border: none;
+  border-radius: 50%;
+  font-weight: 700;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(153,208,193,1) 100%);
+  transition: all 0.5s ease;
+  text-align: center;
+  
+}
+
+#showBtn:hover{
+  transform: scale(1.1);
+}
+
+#showBtn:focus{
+  outline: none;
+}
+
+.login-form{
+  display: inline-block;
+  align-content: center;
+  background: rgba(153,208,193,1);
+  border-radius: 10px;
+  width: 50em;
+  margin-left: 15px;
+  padding: 0.5em;
+  position: relative;
+  opacity: 0;
+  transition: all 0.5s;
+  left: -100vw;
+}
+
+.fade-in{
+  opacity: 1;
+  left: 0;
+}

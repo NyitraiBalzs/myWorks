@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+ /* szövegszínek */
+
+ --green-text-color:#99D0C1;
+ --primary-text-color:#222222;
+ --secondary-text-color:#fff;
+
+ /* háttérszínek */
+
+ --primary-bg-color:#fff;
+ --secondary-bg-color:#0D0D0D;
+
+ /* Font familys */
+
+ --header-font-family: 'Archivo', sans-serif;
+ --primay-font-family: 'Karla', sans-serif;
+ --navbar-font-family: 'Work Sans', sans-serif;
+
+}
+
+
+h1,h2,h3,h4,h5,h6{font-family: var(--header-font-family);}
+
+p{font-family: var(--primay-font-family);}
+
+.IMG img{
+  width: 100vw;
+  position: relative;
+}
+
+.etlapGrid{
+  margin: 5em auto;
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(25em,1fr)) ;
+  grid-row: auto;
+  justify-self: center;
+  grid-gap:2.4em;
+  
+}
+
+.etlapCard{
+  width: 25em;
+  padding: 0 30px ;
+  
+  
+}
+.etlapCard h4{
+  width: 100%;
+  display: flex;
+  white-space: nowrap;
+  padding-bottom: 1em;
+}
+.ar{
+  width: auto;
+  
+
+}
+.etlapCard h4,.line{
+  width: 100%;
+}
+

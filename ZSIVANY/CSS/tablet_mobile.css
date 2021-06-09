@@ -1,0 +1,213 @@
+.container{
+  max-width: 750px;
+}
+.pd-40{
+  padding: 0;
+}
+.header-logo{
+  margin-top: 0 ;
+}
+.navbar .closeMenu{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar .closeMenu i{
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar .closeMenu i:hover{
+  color: #fff;
+  transform: scale(1.2)rotate(180deg);
+  
+}
+nav .navbar{
+  
+  height: 50vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  background: rgba(0,0,0 ,0.7 );
+  display: none;
+  transition: all 1s ease;
+}
+
+.display{
+ display: flex;
+ top: 0;
+  
+}
+
+.openMenu{
+  display:block;
+  position: absolute;
+  padding: 20px;
+  color: var(--green-text-color);
+  z-index: 10;
+}
+
+.openMenu i{
+  transition: all 0.5s ease;
+}
+
+.openMenu i:hover{
+  color: #fff;
+  transform: scale(1.2);
+}
+
+/* Section BEMUTATKOZÓ */
+
+#bemutat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bm-text{
+  margin: 0  auto  ;
+}
+
+.slider-container{
+  padding: 2em 10px;
+}
+.slider-container .slider{
+  margin: 0 auto;
+}
+
+/* valasztek */
+
+.valasztek-container{
+  width: 40vw;
+}
+/* section berlej */
+
+#Berelj h2{
+  text-align: center;
+}
+
+.berelj-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  margin-left: auto;
+}
+
+.berelj-card{
+  padding: 40px
+}
+
+/* E-mail */
+
+#email-container{
+  justify-items: first baseline;
+}
+
+.main-form{
+  display: flex;
+  flex-direction: column;
+}
+
+textarea{
+  width: 17.75em;
+}
+
+
+
+/* ÜZENŐFAL */
+
+#tiMondtatok div h2{
+  text-align: center;
+  width: 100%;
+}
+
+.uzenofal{
+  height: auto;
+  width: 17.75em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uzenofal-card{
+  margin: 40 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.uzenofal-card:nth-child(-n+2){
+  border-right: none;
+  }
+
+  /* FOOTER */
+
+  footer{
+    justify-content:center;
+    padding: 40px;
+  }
+
+  .footer-logo{
+    display: none;
+  }
+  
+  .nyitva{
+    padding-right: 40px;
+  }
+
+  /* ÉTLAP tablet/mobile */
+
+  .etlapGrid{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(25em,1fr)) ;
+  }
+
+  /* MOBILE */
+
+  @media screen and (max-width: 500px) {
+    .header-logo{
+      padding: 7em 0;
+    }
+    .header-logo img{
+      
+      width: 15em;
+      height: auto;
+    }
+
+    #email-container{
+      display: flex;
+      flex-direction: column;
+      margin: 40px auto ;
+      justify-content: center;
+      width: 70%;
+    }
+  
+    .email-uzenet{
+      padding: 2em 0;
+    }
+
+    .slider,
+.slide img{
+  width: 12.5em;
+  height: 12.5em;
+}
+.slides{
+  width: 37.5em;
+}
+
+.slide{
+  width: 12.5em;
+}
+.navigation-auto,
+.navigation-manual{
+  width: 12.5em;
+  margin-top: 175px;
+}
+  }
